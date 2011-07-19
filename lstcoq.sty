@@ -168,10 +168,36 @@ literate=
     {\\times}{{$\times$}}1
     {\\xorb}{{$\oplus$}}1
     {\\andb}{{$\wedge$}}1
-%
 }[keywords,strings]
+\lstdefinestyle{ka}{
+language=Coq,
+literate=
+   {<->}{\,{$\leftrightarrow$\,}}2
+   {>->}{{$\rightarrowtail$}}2
+   {->}{{$\to$}}1 
+   {-->}{{$\to$}}2 
+   {*}{{$\cdot$}}1
+   {**}{{*}}1
+   {\\in}{{$\in$}}1
+   {++}{{$\cup$}}1
+   {\\times}{{$\times$}}1
+   {<==}{{$\subseteq$}}1
+   {\#}{{$^\star$}}1 
+   {\/\\}{{$\wedge$}}1
+   {|-}{{$\vdash$}}1
+   {\\\/}{{$\vee$}}1
+   {~}{{$\dot=$}}1
+   {~~}{{$\approx$}}1
+   {forall}{{$\forall$}}1
+   {forall-}{{$\forall$}}1
+   {exists}{{$\exists$}}1
+   {exists-}{{$\exists$}}1
+   {[blank]}{{\mbox{}}}1
+   {==}{{$\equiv$}}1
+}
 
 \lstnewenvironment{coq}{\lstset{language=Coq}}{}
+\lstnewenvironment{coqka}{\lstset{language=Coq,style=ka}}{}
 % pour inliner dans le texte
 \def\coqinline{\lstinline[language=Coq, basicstyle=\normalsize]}
 % pour inliner dans les tableaux / displaymath...
